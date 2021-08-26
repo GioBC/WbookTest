@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WishListViewController" customModule="WBooks" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wishListTable" destination="ilu-Kg-ocB" id="jc6-oF-lqk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bc_nav bar" translatesAutoresizingMaskIntoConstraints="NO" id="Vdn-eo-MM9">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="eJ9-sv-quq"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ilu-Kg-ocB">
+                    <rect key="frame" x="0.0" y="172" width="414" height="690"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WISHLIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8y-9J-kd8">
+                    <rect key="frame" x="161.5" y="44" width="91.5" height="23"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="g8y-9J-kd8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Db6-kB-9n0"/>
+                <constraint firstItem="g8y-9J-kd8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="M0C-IQ-EVn"/>
+                <constraint firstItem="Vdn-eo-MM9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RVL-DZ-4hR"/>
+                <constraint firstAttribute="trailing" secondItem="Vdn-eo-MM9" secondAttribute="trailing" id="Yfd-pj-9hz"/>
+                <constraint firstItem="ilu-Kg-ocB" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ly4-D5-ueh"/>
+                <constraint firstItem="ilu-Kg-ocB" firstAttribute="top" secondItem="Vdn-eo-MM9" secondAttribute="bottom" constant="44" id="nPk-fH-NYL"/>
+                <constraint firstItem="ilu-Kg-ocB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qLl-tX-63r"/>
+                <constraint firstItem="Vdn-eo-MM9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uNc-Fr-KCK"/>
+                <constraint firstItem="ilu-Kg-ocB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="wzf-eW-oRH"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bc_nav bar" width="375" height="102"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

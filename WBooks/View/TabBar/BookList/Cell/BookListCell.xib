@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="BookListCell" customModule="WBooks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMG-FL-kMG">
+                        <rect key="frame" x="20" y="8" width="320" height="124"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="Fgd-4G-mEH">
+                                <rect key="frame" x="18" y="7" width="284" height="112"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EYT-fc-8Xt">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="524-D7-5av"/>
+                                            <constraint firstAttribute="width" constant="60" id="kfO-7R-LqV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="b0H-tJ-70H">
+                                        <rect key="frame" x="90" y="0.0" width="194" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Little Bird Told Me" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqx-gT-58u">
+                                                <rect key="frame" x="0.0" y="0.0" width="194" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="aek-8j-bhH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Timothy Cross" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIF-bx-QFc">
+                                                <rect key="frame" x="0.0" y="60" width="194" height="40"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="5Ie-4b-BfP"/>
+                                            <constraint firstAttribute="bottom" secondItem="gIF-bx-QFc" secondAttribute="bottom" id="BDS-8g-qgG"/>
+                                            <constraint firstItem="Cqx-gT-58u" firstAttribute="top" secondItem="b0H-tJ-70H" secondAttribute="top" id="XbQ-10-WmB"/>
+                                            <constraint firstItem="Cqx-gT-58u" firstAttribute="leading" secondItem="b0H-tJ-70H" secondAttribute="leading" id="ZT1-1j-JSB"/>
+                                            <constraint firstItem="gIF-bx-QFc" firstAttribute="leading" secondItem="b0H-tJ-70H" secondAttribute="leading" id="imk-O6-HfQ"/>
+                                            <constraint firstItem="gIF-bx-QFc" firstAttribute="leading" secondItem="b0H-tJ-70H" secondAttribute="leading" id="wne-Ot-27a"/>
+                                            <constraint firstItem="gIF-bx-QFc" firstAttribute="top" secondItem="Cqx-gT-58u" secondAttribute="bottom" constant="5" id="zJa-iK-uMK"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="b0H-tJ-70H" firstAttribute="leading" secondItem="EYT-fc-8Xt" secondAttribute="trailing" constant="30" id="EK6-Z6-wXu"/>
+                                    <constraint firstItem="b0H-tJ-70H" firstAttribute="top" secondItem="Fgd-4G-mEH" secondAttribute="top" constant="10" id="cK1-tL-uJk"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="Fgd-4G-mEH" firstAttribute="top" secondItem="JMG-FL-kMG" secondAttribute="top" constant="7" id="6ls-OW-QMP"/>
+                            <constraint firstItem="Fgd-4G-mEH" firstAttribute="leading" secondItem="JMG-FL-kMG" secondAttribute="leading" constant="18" id="CJ7-qJ-uUi"/>
+                            <constraint firstAttribute="bottom" secondItem="Fgd-4G-mEH" secondAttribute="bottom" constant="5" id="CsD-Of-V44"/>
+                            <constraint firstAttribute="trailing" secondItem="Fgd-4G-mEH" secondAttribute="trailing" constant="18" id="xl4-7y-qBj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="JMG-FL-kMG" secondAttribute="trailing" constant="20" symbolic="YES" id="AKl-Ho-UOR"/>
+                    <constraint firstItem="JMG-FL-kMG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="dnd-B7-Bxv"/>
+                    <constraint firstAttribute="bottom" secondItem="JMG-FL-kMG" secondAttribute="bottom" constant="8" id="oag-w1-5lF"/>
+                    <constraint firstItem="JMG-FL-kMG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="taQ-8w-3P3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="BookImage" destination="EYT-fc-8Xt" id="j6T-B4-4v2"/>
+                <outlet property="ContainView" destination="JMG-FL-kMG" id="C3D-wb-yGp"/>
+                <outlet property="GeneralContainView" destination="H2p-sc-9uM" id="KyS-fH-yJ0"/>
+                <outlet property="subTitleLabel" destination="gIF-bx-QFc" id="vGg-0r-YyN"/>
+                <outlet property="titleLabel" destination="Cqx-gT-58u" id="Qrq-KB-rRA"/>
+            </connections>
+            <point key="canvasLocation" x="163.768115942029" y="185.49107142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
